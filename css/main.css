@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, blockquote {
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+    
+}
+
+.logo {
+    width: 100px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.logo:hover{
+    transform: scale(1.25);
+    opacity: 1;
+}
+
+.hide-mobile {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+header ul li:hover{
+    transform: scale(1.08);
+    text-shadow: 2px 2px 2px #9D9D9D;
+    transition: 0.4s;
+}
+
+.menu {
+    width: 25px;
+    margin-top: 45%;
+}
+
+.server {
+    width: 30%;
+    margin: 2em auto 2em;
+    transition: 0.5s;
+}
+.server:hover{
+    transform: scale(1.1);
+}
+
+h1, .subhead {
+    position: relative;
+    z-index: 3;
+}
+
+.subhead {
+    font-size: 1.em;
+}
+
+.purple-container {
+    width: 100%;
+    background: #8B00BC;
+    color: #fff;
+    margin-top: 15%;
+    padding: 4em 0 2em;
+    border-top-left-radius: 40px;
+    transform: skewY(-2deg);
+}
+
+.purple-container:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #8B00BC;
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -2;
+}
+
+.purple-container:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    top: -80px;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.purple-container ul {
+    transform: skewY(2deg);
+}
+
+.purple-container ul li {
+    margin-bottom: 3em;
+}
+
+.purple-container ul li p {
+    padding: 0 .5em;
+}
+
+.purple-container img {
+    width: 14%;
+}
+
+.purple-container ul li:nth-child(3) img {
+    width: 14%;
+}
+
+.gray-container {
+    background: #EACFEB;
+    padding: 4em 0 2em;
+    margin-top: -3%;
+}
+
+.gray-container ul li:first-child {
+    margin-bottom: 2em;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    font-weight: bold;
+    color: #ca02d1;
+}
+
+h2 {
+    margin-top: 7%;
+}
+
+.cta {
+    background: #8B00BC;
+    width: calc(100% - 1em);
+    display: block;
+    color: #fff;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+
+
+
+        opacity: 0.6;
+        transition: 0.5s;
+        display: inline-block;
+        cursor: pointer;
+      } 
+.cta:hover {
+        opacity: 1;
+        text-shadow: 3px 5px 4px #3D444A;
+        background: #50006b;
+        transform: scale(1.05);
+        
+    }
+
+.footer-container {
+    width: 100%;
+    background: #3D444A;
+    color: #fff;
+    padding: 3em 0;
+    border-top-right-radius: 40px;
+    transform: skewY(2deg);
+
+}
+
+.footer-container .container {
+    transform: skewY(-2deg);
+}
+
+.footer-container:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #3D444A;
+    position: absolute;
+    top: -39px;
+    left: 0;
+    z-index: -2;
+}
+
+.footer-container:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    position: absolute;
+    z-index: -1;
+    top: -80px;
+    left: 0;
+    border-radius: 50%;
+}
+
+ul.footer-links {
+    margin: 0 auto;
+}
+
+ul.footer-links li {
+    display: inline-block;
+}
+
+ul.footer-links li a {
+    color: #9D9D9D;
+    font-size: .8em;
+}
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36,41,44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(49, 55, 59);
+}
+
+nav ul li a:hover {
+    background-color: rgb(65, 73, 78);
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img {
+    width: 15px;
+    cursor: pointer;
+}
+
+form{
+
+display: flex;
+flex-direction: column;
+padding: 2vw 4vw;
+width: 90%;
+max-width: 600px;
+border-radius: 10px;
+
+}
+
+form input, form textarea{
+border: 0;
+margin: 10px 0;
+padding: 20px;
+outline: none;
+background: #fff;
+font-size: 16px;
+
+}
+
+.email{
+    width: 200px;
+    margin-top:-300px;
+    margin-left:1000px;
+    border-radius: 100px;
+    box-shadow: 5px 6px 10px#3d0035;
+    transition: 0.6s;
+}
+.email:hover{
+    transform: scale(1.25);
+}
+
+.highfive{
+    box-shadow: 10px 10px 10px #530048;
+    border-radius: 20%;
+    transition: 0.6s;
+}
+.highfive:hover{
+    transform: scale(1.25);
+}
+
+form button{
+    padding: 15px;
+    background: #530048;
+    color: azure;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 5px 6px 10px#3d0035;
+}
+button{
+    transition: 0.5s;
+}
+button:hover{
+    transform: scale(1.15);
+}
+
+.gotopbtn{
+    position:fixed;
+    width: 50px;
+    height: 50px;
+    background: #b900a1;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 6px #530048;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    opacity: 0.7;
+    transition: 0.8s;
+    z-index: 7;
+}
+.gotopbtn:hover{
+    opacity: 1;
+    box-shadow: 3px 3px 5px #3D444A;
+    background: #f500d4;
+    transform: scale(1.25);
+}
+
+.gotomail{
+    position:fixed;
+    width: 50px;
+    height: 50px;
+    background: #b900a1;
+    bottom: 100px;
+    right: 50px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 6px #530048;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    opacity: 0.7;
+    transition: 0.8s;
+    z-index: 7;
+}
+.gotomail:hover{
+    opacity: 1;
+    box-shadow: 3px 3px 5px #3D444A;
+    transform:  scale(1.25);
+}
+
+.interfejs{
+
+    transition: 0.8s;
+}
+.interfejs:hover{
+    transform:  scale(1.15);
+    opacity: 0.6;
+}
+
+.submit {
+    background: #8B00BC;
+    width: calc(100% - 1em);
+    display: block;
+    color: #fff;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+
+
+
+        opacity: 0.6;
+        transition: 0.5s;
+        display: inline-block;
+        cursor: pointer;
+      } 
+.submit:hover {
+        opacity: 1;
+        text-shadow: 3px 5px 4px #3D444A;
+        background: #50006b;
+        transform: scale(1.05);
+        
+    }
+.container_quiz{
+
+        display: flex;
+        justify-content:center;
+
+
+}
+.email{
+    width: 0%;
+
+}
+
+.gray-container-letter {
+    background: #EACFEB;
+    padding: 3em 0 17em;
+    margin-top: -3%;
+}
+iframe{
+    width:600;
+    height:450;
+    border-style: 0;
+}
+.map{
+width: 300px; 
+height: 300px; 
+border-style: 0;
+
+}
+
+.interfejs{
+
+    width: 80%;
+}
+
+
+
+@media only screen and (min-width: 650px)  {
+
+    .server {
+        width: 20%;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .subhead {
+        font-size: 1.4em;
+        margin-bottom: 12%;
+    }
+
+    .purple-container {
+        margin: 0;
+    }
+
+    .purple-container img {
+        width: 20%;
+    }
+
+    .purple-container ul li:nth-child(3) img {
+        width: 20%;
+        margin-top: -6px;
+    }
+
+    .purple-container ul {
+        display: flex;
+        margin-top: -1em;
+        align-items: center;
+    }
+
+    .purple-container ul li {
+        margin-bottom: 0;
+    }
+
+    .purple-container ul li p {
+        padding: 0 .8em;
+    }
+
+    .gray-container ul {
+        display: flex;
+    }
+
+    nav ul {
+        width: 40%;
+    }
+    .email{
+        width: 0%;
+
+    }
+    .map{
+        width: 600px; 
+        height: 400px; 
+        border-style: 0;
+        
+        }
+        .interfejs{
+
+            width: 50%;
+        }
+
+}
+
+
+@media only screen and (min-width: 875px)  {
+
+    .subhead {
+        margin-bottom: 8%;
+    }
+
+    .purple-container ul {
+        margin: 0 0 4% 0;
+    }
+
+    .gray-container ul {
+        margin: 4% 0 0;
+    }
+    .email{
+        width: 0%;
+
+    }
+    .map{
+        width: 650px; 
+        height: 450px; 
+        border-style: 0;
+        
+        }
+        .interfejs{
+
+            width: 30%;
+        }
+
+
+
+
+}
+
+@media only screen and (min-width: 1024px)  {
+
+    .cta {
+        width: 50%;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .show-desktop {
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    nav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        color: black;
+        background-color: inherit;
+        text-align: right;
+        padding: 1em 2em;
+    }
+
+    nav ul li a:hover {
+        background-color: inherit;
+    }
+
+    .scroll {
+        width: 30px;
+        animation: move 1s infinite alternate;
+    }
+
+    @keyframes move {
+        from {
+            transform: translateY(0px);
+        }
+        to {
+            transform: translateY(20px);
+        }
+    }
+    .email{
+        width: 0%;
+
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 1600px)  {
+
+    .server {
+        width: 12%;
+        margin: 4em auto 3em;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    .purple-container {
+        padding: 7em 0 2em;
+    }
+
+    .purple-container ul li p, blockquote {
+        font-size: 2.0em;
+    }
+
+    .gray-container {
+        padding: 6em 0 4em;
+    }
+
+    h2 {
+        margin-top: 4em;
+    }
+
+    .purple-container img {
+        width: 35%;
+    }
+
+    .purple-container ul li:nth-child(3) img {
+        width: 40%;
+        margin-top: 20px;
+    }
+    .email{
+        width: 200px;
+        margin-top:-300px;
+        margin-left:1000px;
+        border-radius: 100px;
+        box-shadow: 5px 6px 10px#3d0035;
+        transition: 0.6s;
+    }
+    .email:hover{
+        transform: scale(1.25);
+    }
+
+
+}
+
+@media only screen and (min-width: 1800px)  {
+
+
+
+
+
+
+
+}
